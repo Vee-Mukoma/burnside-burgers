@@ -1,0 +1,78 @@
+
+/* These styles only apply when the screen is smaller than the specified width.*/
+
+/*Screens 1024px wide and below e.g. iPads and small laptops.*/
+@media (max-width: 1024px) {
+
+    #hero-section h1 {
+        font-size: 2.8rem;  /* reduces hero heading size */
+    }
+
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr); /* menu goes from 3 columns to 2 columns */
+    }
+
+    .about-highlights {
+        grid-template-columns: repeat(2, 1fr); /* highlights go from 3 columns to 2 columns */
+    }
+}
+
+
+/* Screens 768px wide and below e.g. smartphones. */
+@media (max-width: 768px) {
+
+    #header {
+        flex-direction: column; /* stacks logo and nav vertically */
+        gap: 1rem; /* space between logo and links */
+        padding: 1.2rem; /* less side padding on mobile */
+        text-align: center; /* centers everything */
+    }
+
+    #logo {
+        font-size: 1.5rem; /* reduce logo size slightly */
+    }
+
+    nav ul {
+        gap: 1.2rem; /* reduce gap between nav links */
+    }
+
+    /* Adjust text sizes for small screens. */
+    #hero-section {
+        padding: 3rem 1.5rem;
+    }
+    #hero-section h1 {
+        font-size: 2.2rem; 
+    }
+    #hero-section p {
+        font-size: 1rem; 
+    }
+
+    /* Menu goes from 2 columns to 1 column. */
+    #menu {
+        padding: 3rem 1.5rem;       
+    }
+    .menu-items {
+        grid-template-columns: 1fr;  
+    }
+
+    /* Highlights go from 2 columns to 1. */
+    #about {
+        padding: 3rem 1.5rem;        
+    }
+    .about-highlights {
+        grid-template-columns: 1fr;  
+    }
+
+    /* Stack contact info and social links vertically instead of side by side. */
+    #footer {
+        padding: 3rem 1.5rem 1.5rem; 
+    }
+    footer {
+        flex-direction: column;      
+        align-items: center;         
+        text-align: center;          
+    }
+    #social-media {
+        justify-content: center;     /* centers icons horizontally */
+    }
+}
