@@ -1,0 +1,102 @@
+:root {
+    --bg:       #1a0e05;  /* deep dark brown - main background */
+    --section:  #2c1a0e;  /* slightly lighter brown - alternate sections */
+    --card:     #3d2512;  /* warm brown - cards */
+    --gold:     #f5c400;  /* golden yellow - main accent */
+    --brown:    #c8752a;  /* warm orange brown - buttons, highlights */
+    --white:    #ffffff;  /* pure white - headings */
+    --muted:    #c4a882;  /* warm beige - secondary text */
+    --border:   #4a2e15;  /* subtle brown - borders, dividers */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: 'Arial', sans-serif;
+}
+
+/*Header*/
+#header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem, 2.5rem;
+    background-color: var(--section);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+/*Logo*/
+#logo {
+    color: var(--gold);
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+}
+
+/*Nav links*/
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+nav ul a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    transition: color 0.3s; /*For smooth color change on hover*/
+}
+nav ul a:hover {
+    color: var(--gold);
+}
+
+/*Hero section*/
+#hero-section {
+    min-height: 80vh; /*80% of the screen height*/
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column; /*stack heading and paragraph vertically*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+#hero-section h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    letter-spacing: 0.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+#hero-section p {
+    font-size: 1.1rem;
+    color: var(--muted); /*less important than heading*/
+    max-width: 600px; /*stops text from stretching too wide*/
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+#order {
+    background-color: var(--gold);
+    color: var(--bg);
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; /*makes text all CAPS*/
+    cursor: pointer; /*shows hand cursor on hover*/
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /*smooth hover effect*/
+}
+#order:hover {
+    background-color: var(--brown);
+    color: var(--white);
+    transform: translateY(-3px);    /* slightly lifts the button up */
+}
