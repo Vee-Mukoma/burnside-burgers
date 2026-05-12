@@ -151,3 +151,59 @@ nav ul a:hover {
     letter-spacing: 0.05em;      
     margin-bottom: 1rem;         
 }
+
+/*About section*/
+#about {
+    padding: 5rem 2.5rem;              
+    background-color: var(--bg);       
+    text-align: center;                
+    border-bottom: 1px solid var(--border); 
+}
+#about h2 {
+    color: var(--white);           
+    font-size: 2.5rem;             
+    letter-spacing: 0.05em;        
+    margin-bottom: 1.5rem;         
+}
+#about p {
+    color: var(--muted);           
+    font-size: 1.05rem;            
+    line-height: 1.9;              
+    max-width: 700px;              
+    margin: 0 auto 4rem;           
+}
+.about-highlights {
+    display: grid;                          
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 2rem;                              
+    max-width: 900px;                       
+    margin: 0 auto;                        
+}
+.highlight {
+    background-color: var(--card);      
+    border: 1px solid var(--border);    
+    padding: 2.5rem 1.5rem;             
+    border-radius: 4px;                 
+    transition: border-color 0.3s, transform 0.3s; 
+}
+.highlight:hover {
+    border-color: var(--gold);       
+    transform: translateY(-5px);     
+}
+.highlight i {
+    font-size: 2rem;             
+    color: var(--gold);          
+    margin-bottom: 1.2rem;       
+    display: block;              
+}
+.highlight h3 {
+    color: var(--white);         
+    font-size: 1.1rem;           
+    letter-spacing: 0.05em;     
+    margin-bottom: 0.8rem;       
+}
+.highlight p {
+    color: var(--muted);        
+    font-size: 0.9rem;           
+    line-height: 1.7;           
+}
