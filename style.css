@@ -207,3 +207,50 @@ nav ul a:hover {
     font-size: 0.9rem;           
     line-height: 1.7;           
 }
+
+/*Footer section*/
+#footer {
+    background-color: var(--section);    
+    padding: 4rem 2.5rem 2rem;          
+    border-top: 1px solid var(--border); 
+}
+footer {
+    display: flex;                   /* puts children side by side */
+    justify-content: space-between;  /* pushes them to opposite ends */
+    align-items: flex-start;         /* aligns to the top */
+    max-width: 1100px;               /* stops footer getting too wide */
+    margin: 0 auto 3rem;             /* centers it, space below */
+    flex-wrap: wrap;                 /* wraps to next line on small screens */
+    gap: 2rem;                       /* space between columns */
+}
+#contact-info p {
+    color: var(--muted);         
+    font-size: 0.95rem;          
+    line-height: 2;              
+    letter-spacing: 0.03em;      
+}
+#social-media {
+    display: flex;               
+    gap: 1.5rem;                 
+    align-items: center;         
+}
+#social-media a {
+    color: var(--muted);         
+    font-size: 1.5rem;          
+    transition: color 0.3s, transform 0.3s;
+    display: block;             
+
+}
+#social-media a:hover {
+    color: var(--gold);          
+    transform: translateY(-3px); 
+}
+footer p {
+    text-align: center;          
+    color: var(--border);        
+    font-size: 0.85rem;          
+    padding-top: 2rem;           
+    border-top: 1px solid var(--border); 
+    max-width: 1100px;           
+    margin: 0 auto;              
+}
