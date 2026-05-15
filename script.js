@@ -1,3 +1,4 @@
+//Navbar shadow on scroll effect
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', function() {
@@ -7,3 +8,4 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
