@@ -102,6 +102,19 @@ nav ul a:hover {
 }
 
 /*Menu*/
+#menu {
+    padding: 5rem 2.5rem;
+    background-color: var(--section);
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+.menu-items {
+    display: grid;                         
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;                             
+    max-width: 1100px;                    
+    margin: 0 auto;                       
+}
 .item img {
     width: 200px;                 
     height: 200px;               
@@ -141,6 +154,7 @@ nav ul a:hover {
     border-top: 1px solid var(--border); /* line above the price */
     padding-top: 1rem;               /* space above the price */
 }
+
 
 
 /*About section*/
