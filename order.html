@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Burnside Burgers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="logo">Burnside Burgers</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero-section">
+        <h1>Welcome to Burnside Burgers</h1>
+        <p>We're glad you're here. Place your order below and we'll have something hot and delicious ready for you in no time.</p>
+    </section>
+
+    <section id="order-section">
+        <form>
+            <h2>Place your order</h2>
+            <fieldset>
+                <legend>Order details:</legend>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" required><br>
+
+                <label for="number">Phone number:</label>
+                <input id="number" name="number" type="tel" required><br>
+
+                <label>Please choose your preferred order type:</label><br>
+                <input id="pickup" name="orderType" type="radio" value="pickup" required>
+                <label for="pickup">Pickup</label><br>
+                <input id="delivery" name="orderType" type="radio" value="delivery" required>
+                <label for="delivery">Delivery</label><br>
+
+                <label for="order">Please select your order:</label>
+                <select id="order" name="order" required>
+                    <option value="">--Please select your order--</option>
+                    <option value="The Classic Burger">The Classic Burger</option>
+                    <option value="Burnside BBQ">Burnside BBQ</option>
+                    <option value="The Spicy One">The Spicy One</option>
+                    <option value="Mushroom Melt">Mushroom Melt</option>
+                    <option value="Crispy Chicken">Crispy Chicken</option>
+                    <option value="The Veggie">The Veggie</option>
+                </select><br>
+
+                <label for="quantity">How many would you like to order:</label>
+                <input id="quantity" name="quantity" type="number" min="1" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional instructions:</legend>
+                <textarea id="instructions" name="instructions" rows="4" cols="50" placeholder="Any special requests?"></textarea><br>
+                <button type="submit">Submit Order</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="footer">
+        <div id="contact-info">
+            <p>123 Burnside Ave, Nairobi, Kenya</p>
+            <p>Phone: +254 700 000 000</p>
+            <p>Email: info@burnsideburgers.com</p>
+        </div>
+        <footer>
+            <div id="social-media">
+                <a href="https://instagram.com/burnsideburgers" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://twitter.com/burnsideburgers" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="https://facebook.com/burnsideburgers" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Burnside Burgers. All rights reserved.</p>
+        </footer>
+    </section>
+    
+</body>
+</html>
