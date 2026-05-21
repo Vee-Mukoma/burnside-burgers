@@ -9,3 +9,9 @@ window.addEventListener('scroll', function() {
     }
 });
 
+//Order now button
+const orderBtn = document.getElementById('order');
+
+orderBtn.addEventListener('click', function() {
+    window.location.href = 'order.html';
+});
