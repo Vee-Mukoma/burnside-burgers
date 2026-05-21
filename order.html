@@ -94,5 +94,15 @@
         </footer>
     </section>
     
+
+    <script>
+        const orderForm = document.querySelector('form');
+
+        orderForm.addEventListener('submit', function(event) {          
+            const customerName = document.getElementById('name').value;
+
+            alert(`Thank you, ${customerName}! 🎉 Your order has been received. We'll have something hot and delicious ready for you in a few minutes!`);
+        });
+    </script>
 </body>
 </html>
