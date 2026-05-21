@@ -8,7 +8,7 @@ https://vee-mukoma.github.io/burnside-burgers/
 
 ## 📋 Description
 
-Burnside Burgers is a fictional fast food restaurant landing page built as a portfolio project. The site features a full menu, an about section, and a dedicated order page where customers can place their order.
+Burnside Burgers is a fast food restaurant landing page built as a portfolio project. The site features a full menu, an about section, and a dedicated order page where customers can place their order.
 
 ## ✨ Features
 
