@@ -6,15 +6,16 @@
     <title>Order Now | Burnside Burgers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./CSS/order.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header id="header">
         <h1 id="logo">Burnside Burgers</h1>
         <nav>
             <ul>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="./index.html#about">About us</a></li>
+                <li><a href="./index.html#menu">Menu</a></li>
+                <li><a href="./index.html#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -36,10 +37,15 @@
                 <input id="number" name="number" type="tel" required><br>
 
                 <label>Please choose your preferred order type:</label><br>
-                <input id="pickup" name="orderType" type="radio" value="pickup" required>
-                <label for="pickup">Pickup</label><br>
-                <input id="delivery" name="orderType" type="radio" value="delivery" required>
-                <label for="delivery">Delivery</label><br>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="orderType" value="pickup" required> Pickup
+                    </label>
+                    <label>
+                        <input type="radio" name="orderType" value="delivery"> Delivery
+                    </label>
+                </div>
+</div>
 
                 <label for="order">Please select your order:</label>
                 <select id="order" name="order" required>
