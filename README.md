@@ -32,7 +32,7 @@ Burnside Burgers is a fast food restaurant landing page built as a portfolio pro
 1. Clone the repository
 
 ```bash
-   git clone https://github.com/yourusername/burnside-burgers.git
+   git clone https://github.com/vee-mukoma/burnside-burgers.git
 ```
 
 2. Open the project folder
